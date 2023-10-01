@@ -1,0 +1,48 @@
+---
+import Navegacion from "../components/Navegacion.astro";
+const titulopage = "About | SupportJConline";
+import "../styles/global.css";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{titulopage}</title>
+  </head>
+
+  <body>
+    <Navegacion />
+    <section class="Contendor">
+      <div class="Fondo About_p">
+        <h1 class="name white">Acerca de SupportJConline</h1>
+        <p class="pad white">
+          Detrás de cada cliente satisfecho tenemos un equipo de especialistas y
+          consultores convencidos del cambio positivo con nuestras soluciones.
+        </p>
+      </div>
+
+      <div class="About_p">
+        <h1 class="about_title titulo-dos">
+          Nebulix se lanza bajo CC BY-ND 4.0
+        </h1>
+        <p>
+            aplicación de soporte técnico que le permita al usuario de una manera fácil y accesible darles mantenimiento a sus equipos, a su vez también se busca aumentar los conocimientos mediante el procedimiento del mismo. 
+        </p>
+        <p>
+          nfolding tiene la misión de ayudar a las empresas a crear un impacto
+          duradero con soluciones duraderas y sostenibles.
+
+          <h2 class="titulo-dos">Esta plantilla es creada por Unfolding.io</h2>
+          <h2 class="titulo-dos">SoportePremiun</h2>
+          <p>
+            Si necesita ayuda para configurar su sitio web o necesita
+            integraciones personalizadas, no dude en contactarnos en
+            hello@unfolding.io
+          </p>
+        </p>
+      </div>
+    </section>
+  </body>
+</html>
