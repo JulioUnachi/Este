@@ -2,7 +2,23 @@
 import Navegacion from "../components/Navegacion.astro";
 const titulopage = "About | SupportJConline";
 import "../components/layout/styles.css";
+
+
+const jonathan ={
+nombre: "JONATHAN CASTILLO",
+Ocupacion:  "Desarrollador",
+Descripcion: "A veces tiene baby y aveces no",
+
+};
+
+const cesar= {
+  nombre: "CESAR",
+  Ocupacion: "Trabajador",
+  descripcion: "Corredor de Kilometro a Kilometro",
+};
+
 ---
+
 
 <html lang="en">
   <head>
@@ -17,34 +33,71 @@ import "../components/layout/styles.css";
     
     <Navegacion />
     <section class="Contendor">
-      <div class="Fondo About_p">
-        <h1 class="name white">Acerca de SupportJConline</h1>
+      <div class="Fondo cards">
+        <h1 class="name white">Acerca de SupportCJonline</h1>
         <p class="pad white">
           Detrás de cada cliente satisfecho tenemos un equipo de especialistas y
           consultores convencidos del cambio positivo con nuestras soluciones.
         </p>
       </div>
 
-      <div class="About_p">
+      <div class="cards ">
         <h1 class="about_title titulo-dos">
-          Nebulix se lanza bajo CC BY-ND 4.0
+          liderazgo en innovación tecnológica.
         </h1>
         <p>
             aplicación de soporte técnico que le permita al usuario de una manera fácil y accesible darles mantenimiento a sus equipos, a su vez también se busca aumentar los conocimientos mediante el procedimiento del mismo. 
         </p>
-        <p>
-          nfolding tiene la misión de ayudar a las empresas a crear un impacto
-          duradero con soluciones duraderas y sostenibles.
+        
 
-          <h2 class="titulo-dos">Esta plantilla es creada por Unfolding.io</h2>
-          <h2 class="titulo-dos">SoportePremiun</h2>
+          <h2 class="titulo-dos">Aprendizaje Continuo</h2>
+         
           <p>
-            si yo se Si necesita ayuda para configurar su sitio web o necesita
-            integraciones personalizadas, no dude en contactarnos en
-            hello@unfolding.io er
+            Nuestra plataforma puede facilitar el aprendizaje continuo a medida que los usuarios adquieren habilidades y conocimientos técnicos al resolver problemas. Esto puede tener un impacto positivo en sus oportunidades laborales y desarrollo personal.
+
           </p>
         </p>
       </div>
     </section>
+
+
+    <!-- Estructura de los objetivos -->
+
+
+    <!-- Estructura de los creadores -->
+    <main>
+    <!--Cartillas de los Creadores  del contenido (Proyecto)-->
+    <div class="fondo">
+    <h1>Personas que Hicieron posible este Proyecto</h1>
+    <p>Gracias a la creatividad y el esfuerzo incansable de sus creadores, este proyecto se ha convertido en una realidad excepcional en el mundo de la tecnología</p>
+  </div>
+  
+    <section class="creadores_content">
+
+    <div class="cards_authores">
+      <img src="https://www.becas-santander.com/content/dam/becasmicrosites/blog/metodolog%C3%ADas-de-desarrollo-de-software.jpg" alt="Jona">
+      <img src="" alt="">
+      <h2>{jonathan.nombre}</h2>
+      <h3>{jonathan.Ocupacion}</h3>
+      <p>{jonathan.Descripcion}</p>
+    </div>
+    <div class="cards_authores">
+      <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDF8fGRldmVsb3BlcnN8ZW58MHx8fHwxNjMzNjI5Mjkx&ixlib=rb-1.2.1&q=80&w=2000" alt="">
+      <h2>Nombre</h2>
+      <h3>creative leader</h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis, fugit?</p>
+    </div>
+    <div class="cards_authores">
+      <img src="" alt="">
+      <h2>Nombre</h2>
+      <h4>sales manager</h4>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis, fugit?</p>
+    </div>
+
+    
+
+    </section>
+  </main>
+  
   </body>
 </html>
