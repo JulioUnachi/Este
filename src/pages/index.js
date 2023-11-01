@@ -1,1 +1,0 @@
-const operador = "ideas para el proyecto";
