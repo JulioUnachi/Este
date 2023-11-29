@@ -137,11 +137,20 @@ h3{
 
 
 /*Seccion categorias*/
+.cards-info{
+
+  height: 500px;
+}
+
 .contenedor-categorias{
   height: 300px;
   display: flex;
   justify-content: center;
   gap:20px;
+}
+.icono{
+  width:60px;
+  height:60px;
 }
 
 .informacion{
@@ -186,6 +195,11 @@ h3{
 
 /*Media queries*/
 @media (max-width: 610px) {
+  /*Telefonos*/
+  .icono{
+width: 40px;
+height: 40px;
+  }
     .title-section{
         font-size: 1.3rem;
         margin-bottom: 10px;
@@ -198,10 +212,10 @@ h3{
         align-items: center;
         align-content: center;
         flex-wrap: wrap;
-        gap: 15px;
-        
+        gap: 15px;    
     }
     
+
     .contain{
     height: 400px;
     }
@@ -220,7 +234,8 @@ h3{
  .tabla{
   width: 100%;
   margin: auto;
-        display: flex;
+  display: flex;
+  justify-content: center;
         gap: 5px;
       }
       .title-categorias{
@@ -239,7 +254,18 @@ h3{
         width: 100%;
         margin-bottom: 15px;
       }
-      
+      .categorias-cards{
+  width: 135px;
+  height: 120px;
+  padding: 10px;
+  border-radius:7px ;
+}
       }
+
+
+    @media only screen  and(min-width: 764px) and (max-width:911px){
+      
+    }
+    /*Responsive Tablets*/
      
   
