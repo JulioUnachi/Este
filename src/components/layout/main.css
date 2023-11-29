@@ -199,6 +199,7 @@ h3{
   .icono{
 width: 40px;
 height: 40px;
+background-color: white;
   }
     .title-section{
         font-size: 1.3rem;
@@ -236,7 +237,7 @@ height: 40px;
   margin: auto;
   display: flex;
   justify-content: center;
-        gap: 5px;
+        gap: 15px;
       }
       .title-categorias{
        font-size: 1.5rem; 
@@ -255,8 +256,10 @@ height: 40px;
         margin-bottom: 15px;
       }
       .categorias-cards{
+
   width: 135px;
   height: 120px;
+  background-color: azure;
   padding: 10px;
   border-radius:7px ;
 }
