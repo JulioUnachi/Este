@@ -1,7 +1,9 @@
 ---
 import Navegacion from "../components/Navegacion.astro";
+import Footer from "../components/Footer.astro"
 const title = "Inicio|SupportjcOnline";
 import "../components/layout/main.css"
+
 ---
 
 <html lang="en">
@@ -93,6 +95,42 @@ import "../components/layout/main.css"
 
         </div>
       </section>
+
+
+      <section class="buttom-sect">
+      <div class="contenedor-categorias">
+        <div class="informacion">
+        <h2  class="title-categorias">Descubre las <span>categorias</span> </h2>
+        <p class="parrafo-cat">Descubre un amplio abanico de cursos tecnológicos en nuestra plataforma. Sumérgete en experiencias de aprendizaje enriquecedoras y expande tus conocimientos en el mundo de la Tecnologia</p>
+        
+      
+      </div>
+
+      <div class="tabla">
+        <div class="categorias-cards">
+          <img src="/assets/certificado.png" alt="imagen" width="60px" height="60px">
+          <h4>Diseño Grafico</h4>
+        </div>
+        <div class="categorias-cards">
+          <img src="/assets/certificado.png" alt="imagen" width="60px" height="60px">
+          <h4>Desarrollo web</h4>
+        </div>
+        <div class="categorias-cards">
+          <img class="blanco" src="/assets/certificado.png" alt="imagen" width="60px" height="60px">
+          <h4>Analisis de Datos</h4>
+        </div>
+        <div class="categorias-cards">
+          <img src="/assets/certificado.png" alt="imagen" width="60px" height="60px">
+          <h4>Arquitectura</h4>
+        </div>
+    </div>
+
+      </div>
+      </section>
     </main>
+
+    <footer>
+    <Footer />
+    </footer>
   </body>
 </html>
