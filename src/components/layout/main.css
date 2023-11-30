@@ -1,7 +1,7 @@
 /*importe poppins 200*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
 /*Importe  poppins 400*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 * {
   margin: 0;
@@ -71,107 +71,104 @@ h1 {
 main {
   width: 80%;
   margin: auto;
-  height: 100%;
+  height: 100%;  
 }
-p{
-    font-family: var(--fuente-poppins-parrafo);
-    font-weight: 200;
+p {
+  font-family: var(--fuente-poppins-parrafo);
+  font-weight: 200;
 }
 
 /*Seccion del Servicio*/
 .text-purple {
   color: var(--color-primario);
   font-family: var(--fuente-poppins-titulos);
-  font-weight:400;
+  font-weight: 400;
+}
+.top {
+  margin: 40px auto 20px;
+  font-family: var(--fuente-poppins-parrafo);
+  font-weight: 200;
+}
+
+.title-section {
+  font-family: var(--fuente-poppins-titulos);
+  font-weight: 400 bold;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+span {
+  color: var(--color-primario);
+}
+.cards-info {
+  height: 470px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 30px;
+}
+.card {
+  width: 300px;
+  height: 330px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  gap: 10px;
   
 }
-.top
-{
-    margin: 40px auto 20px;
-    font-family: var(--fuente-poppins-parrafo);
-    font-weight: 200;
+
+
+.but {
+  margin-bottom: 90px;
 }
 
-.title-section{
-    font-family: var(--fuente-poppins-titulos);
-    font-weight: 400 bold;
-    font-size: 1.8rem;
-    margin-bottom: 10px;
+.flex-top {
+  align-self: flex-start;
 }
-
-span{
-    color: var(--color-primario);
+h3 {
+  font-family: var(--fuente-poppins-titulos);
+  font-weight: 400;
 }
-.cards-info{
-
-    height: 470px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    gap: 30px;
-    
-}
-.card{  
-width: 300px;
-height: 330px;
-display: flex; 
-flex-direction: column;
-align-items: center;
-padding: 20px;
-border-radius: 12px;
-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-gap: 10px;
-}
-.but{
-margin-bottom: 90px;
-}
-
-.flex-top{
-align-self: flex-start;
-}
-h3{
-    font-family: var(--fuente-poppins-titulos);
-    font-weight: 400;
-}
-
 
 /*Seccion categorias*/
-.cards-info{
-
+.cards-info {
   height: 500px;
 }
 
-.contenedor-categorias{
+.contenedor-categorias {
   height: 300px;
   display: flex;
   justify-content: center;
-  gap:20px;
+  gap: 20px;
 }
-.icono{
-  width:60px;
-  height:60px;
+.icono {
+  width: 60px;
+  height: 60px;
 }
 
-.informacion{
+.informacion {
   width: 50%;
 }
 
-.tabla{
+.tabla {
   display: flex;
   width: 50%;
   flex-wrap: wrap;
   justify-content: flex-end;
   gap: 5px;
 }
-.categorias-cards{
+.categorias-cards {
   width: 150px;
   height: 130px;
   padding: 10px;
-  border-radius:7px ;
+  border-radius: 7px;
 }
 
-.title-categorias{
+.title-categorias {
   margin-bottom: 30px;
   font-size: 2rem;
   font-family: var(--fuente-poppins-titulos);
@@ -181,94 +178,76 @@ h3{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 /*Media queries*/
 @media (max-width: 610px) {
   /*Telefonos*/
-  .icono{
-width: 40px;
-height: 40px;
-background-color: white;
+  .icono {
+    width: 40px;
+    height: 40px;
+    background-color: white;
   }
-    .title-section{
-        font-size: 1.3rem;
-        margin-bottom: 10px;
-    }
-    .cards-info{
-        margin-top: 16rem;
-        height: 515px;  
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-        flex-wrap: wrap;
-        gap: 15px;    
-    }
-    
+  .title-section {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
+  .cards-info {
+    margin-top: 16rem;
+    height: 515px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
 
-    .contain{
+  .contain {
     height: 400px;
-    }
-    header {
-        width: 100%;
-        height: 610px;
-        background-color: #f4f7fb;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      h1{
-        font-size: 1.2rem;
-      }
+  }
+  header {
+    width: 100%;
+    height: 610px;
+    background-color: #f4f7fb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  h1 {
+    font-size: 1.2rem;
+  }
 
- .tabla{
-  width: 100%;
-  margin: auto;
-  display: flex;
-  justify-content: center;
-        gap: 15px;
-      }
-      .title-categorias{
-       font-size: 1.5rem; 
-      }
-      .contenedor-categorias{
-        display: block;
-      }
-      .parrafo-cat{
-        text-align: start;
-      }
-      .buttom-sect{
-      margin-top: 290px;
-      }
-      .informacion{
-        width: 100%;
-        margin-bottom: 15px;
-      }
-      .categorias-cards{
-
-  width: 135px;
-  height: 120px;
-  background-color: azure;
-  padding: 10px;
-  border-radius:7px ;
+  .tabla {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  .title-categorias {
+    font-size: 1.5rem;
+  }
+  .contenedor-categorias {
+    display: block;
+  }
+  .parrafo-cat {
+    text-align: start;
+  }
+  .buttom-sect {
+    margin-top: 290px;
+  }
+  .informacion {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .categorias-cards {
+    width: 135px;
+    height: 120px;
+    background-color: azure;
+    padding: 10px;
+    border-radius: 7px;
+  }
 }
-      }
 
-
-    @media only screen  and(min-width: 764px) and (max-width:911px){
-      
-    }
-    /*Responsive Tablets*/
-     
-  
+@media only screen and(min-width: 764px) and (max-width: 911px) {
+}
+/*Responsive Tablets*/
