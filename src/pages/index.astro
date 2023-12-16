@@ -1,8 +1,8 @@
 ---
-import Navegacion from "../components/Navegacion.astro";
-import Footer from "../components/Footer.astro"
+import Navegacion from "../pages/components/Navegacion.astro";
+import Footer from "../pages/components/Footer.astro"
 const title = "Inicio|SupportjcOnline";
-import "../components/layout/main.css"
+import "../layout/main.css"
 
 ---
 
@@ -28,6 +28,7 @@ import "../components/layout/main.css"
 
     <!--Navegación  -->
     <Navegacion />
+
 
     <!-- Header seccion Principal -->
     <header>
@@ -57,13 +58,12 @@ import "../components/layout/main.css"
      
 
       <!--contenedor GRID -->
-    <!-- <section class="section-servicios">
-        <div class="imagenes">
-
+    <section class="section-servicios">
         
-          <img src="/assets/Girl.jpg" alt="girl"  width="200px"/>
-          <img src="/assets/Reunion.jpg" alt="meet" width="200px" />
-          <img src="/assets/tiping.jpg" alt="computadora"  width="200px"/> 
+      <div class="imagenes">
+          <img src="/assets/Girl.jpg" alt="girl" />
+          <img src="/assets/Reunion.jpg" alt="meet" />
+          <img src="/assets/tiping.jpg" alt="computadora"/> 
         </div>
 
         <div class="info">
@@ -72,7 +72,7 @@ import "../components/layout/main.css"
 
             Nuestra misión es proporcionar recursos educativos de alta calidad y apoyo a personas de todas las edades, orígenes y habilidades.</p>
         </div>
-      </section> -->
+      </section> 
 
       
       
@@ -139,6 +139,6 @@ import "../components/layout/main.css"
     </main>
 
 
-
+<Footer/>
   </body>
 </html>

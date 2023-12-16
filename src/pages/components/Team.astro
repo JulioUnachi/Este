@@ -1,0 +1,239 @@
+---
+
+---
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <style>
+ 
+.titulo-equipo{
+  font-size: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+div > .image{
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  margin: auto;
+  width: 100%;
+
+}
+
+/* Header */
+.container .header {
+  display: flex;
+  justify-content: space-around;
+  padding: 48px;
+
+}
+
+.container .header h1 {
+  font-family: 'PT Serif', serif;
+  font-size: 3.6rem;
+}
+
+.container .header .text {
+  max-width: 440px;
+  font-size: 1.2rem;
+}
+
+.container .header .text h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* Images */
+.container .images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  padding: 72px 150px;
+}
+
+.container .images .image {
+  position: relative;
+  width: 265px;
+}
+
+.container .images .image:nth-child(3n + 2) {
+  margin-top: 100px;
+}
+
+.container .images .image img {
+  width: 238px;
+}
+
+.container .images .image .job {
+  position: absolute;
+  right: 0;
+  font-family: 'PT Serif', serif;
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  writing-mode: vertical-rl;
+}
+
+.container .images .image .name {
+  font-weight: 300;
+  font-size: 1.8em;
+}
+
+
+
+
+
+
+
+@media (max-width: 1024px) {
+  .container .images {
+    padding: 56px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container .header {
+    flex-direction: column;
+    margin: 0 30px;
+  }
+
+  .container .header .text h2 {
+    margin-top: 38px;
+    margin-bottom: 10px;
+  }
+
+  .container .images {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 48px;
+  }
+
+  .container .images .image:nth-child(3n + 2) {
+    margin-top: unset;
+  }
+
+  .container .images .image:nth-child(odd) {
+    row-gap: 64px;
+  }
+
+  .container .images .image:nth-child(even) {
+    margin-top: 64px;
+  }
+}
+
+@media (max-width: 575px) {
+  .container .header {
+    margin: 0;
+    padding: 24px;
+  }
+
+  .container .header .text {
+    max-width: 333px; 
+  }
+
+  .container .header .text p {
+    font-size: 1.2rem;
+  }
+
+  .container .images {
+    margin-bottom: 24px;
+    padding: 24px;
+  }
+
+  .container .images .image {
+    width: 154px;
+  }
+
+  .container .images .image img {
+    width: 138px;
+  }
+
+  .container .images .image .job {
+    font-size: 1rem;
+  }
+
+  .container .images .image .name {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .container .header,
+  .container .images {
+    padding: 12px;
+    width: 130px;
+  }
+}
+
+@media (max-width: 320px) {
+  .container .header h1 {
+    font-size: 1rem;
+  }
+
+  .container .images {
+    column-gap: 12px;
+  }
+
+  .container .images .image {
+    width: 130px;
+  }
+
+  .container .images .image img {
+    width: 128px;
+  }
+
+}
+        </style>
+    </head>
+
+    <body>
+        <div class="fonts">
+        <div class="container">
+          <div class="caja"></div>
+          <div class="header">
+            <h1 class="titulo-equipo">Equipo Creativo</h1>
+            <div class="text">
+              <h2>Somos</h2>
+              <p>
+                Un equipo; Gracias a la creatividad y el esfuerzo incansable de sus creadores, este proyecto se ha convertido en una realidad excepcional en el mundo de la tecnología
+              </p>
+            </div>
+          </div>
+    
+          <div class="images">
+            <div class="image">
+              <p class="job">Product owner</p>
+              <img src="/assets/photo1.png" alt="Photo 1" />
+              <p class="name">Cesar Rivera</p>
+            </div>
+            <div class="image">
+              <p class="job">Art director</p>
+              <img src="/assets/photo2.png" alt="Photo 2" />
+              <p class="name">Idalia Villareal</p>
+            </div>
+            <div class="image">
+              <p class="job">Tech Lead</p>
+              <img src="/assets/photo3.png" alt="Photo 3" />
+              <p class="name">Jesus Otero</p>
+            </div>
+            <div class="image">
+              <p class="job">UX Designer</p>
+              <img src="/assets/photo6.png" alt="Photo 4" />
+              <p class="name">Jonathan Castillo</p>
+            </div>
+            <div class="image">
+              <p class="job">Developer</p>
+              <img src="/assets/photo6.png" alt="Photo 5" />
+              <p class="name">Julio Peña</p>
+            </div>
+    
+          </div>
+        </div>
+    </div>
+    
+      </body>
+</html>

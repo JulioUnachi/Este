@@ -15,6 +15,27 @@
   --fuente-poppins-parrafo: "Poppins", sans-serif; /* Familia de fuentes Poppins */
   --fuente-poppins-titulos: "Poppins", sans-serif; /*Familia de fuentes para parrafos*/
 }
+.section-servicios {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Dos columnas de igual tamaño */
+  grid-column-gap: 15px;
+}
+.imagenes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr; /* Ahora ambas filas tendrán altura igual */
+  grid-column-gap: 10px;
+}
+
+.imagenes img:nth-child(3) {
+  grid-column: 2; /* Asegura que la tercera imagen esté en la segunda columna */
+   /* Asegura que la tercera imagen esté en la primera fila */
+}
+.imagenes > img{
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
 
 header {
   width: 100%;
@@ -208,12 +229,11 @@ h3 {
 
   .imag {
     height: 100%;
-    width:100%;
+    width: 100%;
     background-position: center;
-    background-size:cover;
+    background-size: cover;
     border-bottom-left-radius: 20px;
     border-top-right-radius: 30%;
-    
   }
 
   .icono {

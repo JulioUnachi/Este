@@ -1,21 +1,8 @@
 ---
-import Navegacion from "../components/Navegacion.astro";
+import Navegacion from "../pages/components/Navegacion.astro";
+import Team from "../pages/components/Team.astro"
 const titulopage = "About | SupportJConline";
-import "../components/layout/styles.css";
-
-
-const jonathan ={
-nombre: "JONATHAN CASTILLO",
-Ocupacion:  "Desarrollador",
-Descripcion: "A veces tiene baby y aveces no",
-
-};
-
-const cesar= {
-  nombre: "CESAR",
-  Ocupacion: "Trabajador",
-  descripcion: "Corredor de Kilometro a Kilometro",
-};
+import "../layout/styles.css";
 
 ---
 
@@ -66,38 +53,15 @@ const cesar= {
 
 
     <!-- Estructura de los creadores -->
-    <main>
-    <!--Cartillas de los Creadores  del contenido (Proyecto)-->
-    <div class="fondo">
-    <h1>Personas que Hicieron posible este Proyecto</h1>
-    <p>Gracias a la creatividad y el esfuerzo incansable de sus creadores, este proyecto se ha convertido en una realidad excepcional en el mundo de la tecnología</p>
-  </div>
+   
+<Team/>
   
-    <section class="creadores_content">
+  
 
-    <div class="cards_authores">
-      <img src="https://www.becas-santander.com/content/dam/becasmicrosites/blog/metodolog%C3%ADas-de-desarrollo-de-software.jpg" alt="Jona">
-      <img src="" alt="">
-      <h2>{jonathan.nombre}</h2>
-      <h3>{jonathan.Ocupacion}</h3>
-      <p>{jonathan.Descripcion}</p>
-    </div>
-    <div class="cards_authores">
-      <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDF8fGRldmVsb3BlcnN8ZW58MHx8fHwxNjMzNjI5Mjkx&ixlib=rb-1.2.1&q=80&w=2000" alt="">
-      <h2>Nombre</h2>
-      <h3>creative leader</h3>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis, fugit?</p>
-    </div>
-    <div class="cards_authores">
-      <img src="" alt="">
-      <h2>Nombre</h2>
-      <h4>sales manager</h4>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis, fugit?</p>
-    </div>
 
     
 
-    </section>
+
   </main>
   
   </body>
