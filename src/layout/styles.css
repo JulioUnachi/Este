@@ -85,6 +85,7 @@ flex-direction: column;
 justify-content: center;
 }
 .about_title{
+  margin-top: 40px;
   font-size: 1rem;
   font:italic;
   margin-bottom:15px;
@@ -96,6 +97,7 @@ font-weight:bolder;
 }
 .white{
 color: white;
+font-weight: 600;
 }
 
 /*Secccion de Main */

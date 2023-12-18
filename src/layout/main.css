@@ -79,6 +79,7 @@ header {
   width: 80%;
   padding: 80px auto;
   margin-bottom: 30px;
+  font-weight: 500;
 }
 .button {
   color: #6016c6;
@@ -307,6 +308,7 @@ h3 {
   }
   .parrafo-cat {
     text-align: start;
+    font-weight: 500;
   }
   .buttom-sect {
     margin-top: 290px;
