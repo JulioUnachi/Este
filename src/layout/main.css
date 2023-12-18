@@ -89,7 +89,7 @@ header {
 .imag {
   height: 100%;
   width: 70%;
-  background: url("assets/hombre-mujer.jpg");
+  background: url("/assets/hombre-mujer-min.jpg");
   background-position: center;
   background-size: cover;
   border-top-right-radius: 20px;
